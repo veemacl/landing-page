@@ -6,16 +6,65 @@ body {
     margin: 0px;
 }
 
-div {
+/* div {
     border: 0.5px solid red
-}
+} */
 
-a {
-    margin: 5px;
-}
+/* Given colours and font styles */
 
 #hero, #header, #footer {
     background-color: #1F2937;
+}
+
+#hero-h1 {
+    font-size: 48px;
+    font-weight: bolder;
+    color: #f9faf8;
+}
+
+.link, #hero-p {
+    color: #E5E7EB;
+    font-size: 18px;
+}
+
+#logo {
+    color: #f9faf8;
+    font-size: 24px;
+}
+
+#hero-button, #call-button {
+    background-color: #3882F6;
+    color: white;
+    border-radius: 5px;
+    border: 0px;
+    padding: 5px 20px;
+}
+
+#hero-button:hover, #call-button:hover {
+    background-color: #6ca2f9;
+}
+
+#hero-button:active, #call-button:active {
+    background-color: #5a95f4;
+}
+
+#info-header {
+    font-size: 36px;
+    font-weight: bolder;
+    color: #1F2937;
+}
+
+#quote-text {
+    font-style: italic;
+    font-size: 36px;
+    font-weight: lighter;
+    color: #1F2937;
+}
+
+/* End of colours and font styles */
+
+a {
+    margin: 5px;
 }
 
 #header {
@@ -29,10 +78,7 @@ a {
     align-items: center;
 }
 
-#logo {
-    color: #f9faf8;
-    font-size: 24px;
-}
+
 
 #hero {
     display: flex;
@@ -51,43 +97,10 @@ a {
     color: white;
 }
 
-#hero-h1 {
-    font-size: 48px;
-    font-weight: bolder;
-    color: #f9faf8;
-}
-
-.link, #hero-p {
-    color: #E5E7EB;
-    font-size: 18px;
-}
-
-#hero-button {
-    background-color: #3882F6;
-    color: white;
-    border-radius: 5px;
-    border: 0px;
-    padding: 5px 20px;
-}
-
-#hero-button:hover {
-    background-color: #6ca2f9;
-}
-
-#hero-button:active {
-    background-color: #5a95f4;
-}
-
 #info {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-#info-header {
-    font-size: 36px;
-    font-weight: bolder;
-    color: #1F2937;
 }
 
 #img-container {
@@ -115,16 +128,12 @@ a {
 
 #quote {
     background-color: #E5E7EB;
-    padding: 30px;
     display: flex;
     justify-content: center;
 }
 
-#quote-text {
-    font-style: italic;
-    font-size: 36px;
-    font-weight: lighter;
-    color: #1F2937;
+#quote-box {
+    margin: 7%;
 }
 
 #quote-author {
@@ -132,7 +141,7 @@ a {
     font-size: 24px;
     display: flex;
     justify-content: flex-end;
-    margin-top: -70px;
+    margin-top: -50px;
 }
 
 #call {
@@ -142,4 +151,30 @@ a {
 #call-box {
     background-color: #3882F6;
     border-radius: 5px;
+    display: flex;
+    justify-content: space-around;
+}
+
+#call-text, #footer-text {
+    color: #E5E7EB;
+}
+
+#call-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#call-button {
+    border: 1.5px solid #E5E7EB;
+}
+
+#footer {
+    display: flex;
+    justify-content: center;
+    padding: 3%
+}
+
+#footer-text {
+    font-size: small;
 }
